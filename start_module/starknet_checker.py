@@ -13,16 +13,16 @@ def starknet_checker(wallets: list, proxies: list):
     proxies_count = len(proxies)
     for i in range(0, len(wallets)):
         if proxies_count == 0:
-            data.append([wallets[i], None, i])
+            data.append([wallets[i].strip(), None, i])
         else:
-            data.append([wallets[i], proxies[i % len(proxies)], i])
+            data.append([wallets[i].strip(), proxies[i % len(proxies)].strip(), i])
 
     if SHUFFLE_WALLETS:
         shuffle(data)
 
     for item in data:
-        wallet = WalletStat(wallet=item[0].strip(),
-                            proxy=item[1].strip(),
+        wallet = WalletStat(wallet=item[0],
+                            proxy=item[1],
                             user_agent=fake_useragent.UserAgent().random).data
         wallet.index = [item[2]]
         wallets_stat.append(wallet)

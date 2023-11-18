@@ -31,7 +31,9 @@ class WalletData():
             'protocols': {
                 'myswap': 0,
                 'JediSwap': 0,
-                '10kswap': 0
+                '10kswap': 0,
+                'sithswap': 0,
+                'avnu': 0
             }
         }
 

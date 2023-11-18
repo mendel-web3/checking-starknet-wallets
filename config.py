@@ -24,7 +24,9 @@ COLUMNS = [
     'unique_contracts',
     'myswap',
     'JediSwap',
-    '10kswap'
+    '10kswap',
+    'sithswap',
+    'avnu'
 ]
 
 DEFAULT_STATS = {
@@ -49,7 +51,9 @@ DEFAULT_STATS = {
     'protocols': {
         'myswap': 0,
         'JediSwap': 0,
-        '10kswap': 0
+        '10kswap': 0,
+        'sithswap': 0,
+        'avnu': 0
     }
 }
 
@@ -57,6 +61,22 @@ PROTOCOLS_DATE = {
     "0x010884171baf1914edc28d7afb619b40a4051cfae78a094a55d230f19e944a28": {
         "name": "myswap",
         "url": "https://www.myswap.xyz/"
+    },
+    "0x04270219d365d6b017231b52e92b3fb5d7c8378b05e9abc97724537a80e93b0f": {
+        "name": "avnu",
+        "url": "https://app.avnu.fi/en"
+    },
+    "0x030615bec9c1506bfac97d9dbd3c546307987d467a7f95d5533c2e861eb81f3f": {
+        "name": "sithswap",
+        "url": "https://app.sithswap.com/swap/"
+    },
+    "0x00691fa7f66d63dc8c89ff4e77732fff5133f282e7dbd41813273692cc595516": {
+        "name": "sithswap",
+        "url": "https://app.sithswap.com/swap/"
+    },
+    "0x02aab581754064a87ade1b680fd9756dc3a17440a87aaf496dcfb39fd163d1dd": {
+        "name": "sithswap",
+        "url": "https://app.sithswap.com/swap/"
     },
     "0x045e7131d776dddc137e30bdd490b431c7144677e97bf9369f629ed8d3fb7dd6": {
         "name": "JediSwap",

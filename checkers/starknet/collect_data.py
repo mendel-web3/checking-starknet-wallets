@@ -31,6 +31,8 @@ class WalletStat():
             self.wallet_data.stats['unique_contracts'],
             self.wallet_data.stats['protocols']['myswap'],
             self.wallet_data.stats['protocols']['JediSwap'],
-            self.wallet_data.stats['protocols']['10kswap']
+            self.wallet_data.stats['protocols']['10kswap'],
+            self.wallet_data.stats['protocols']['sithswap'],
+            self.wallet_data.stats['protocols']['avnu']
         ]
         self.data = pd.DataFrame(data=stats, index=COLUMNS).T
